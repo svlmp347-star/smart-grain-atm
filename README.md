@@ -34,7 +34,7 @@ The following hardware components are part of the **Smart Grain ATM**:
    - **Green**: Access granted or task complete
    - **Red**: Access denied
 6. **Buzzer**: Provides audible feedback for different system states.
-7. **Arduino Board**: Main controller running the software logic.
+7. ** ESP32 or Arduino Board**: Main controller running the software logic.
 
 ---
 
@@ -54,7 +54,7 @@ The system supports only **two predefined premium users** for now! Each user is 
 | User Name | Card UID       | Grain (grams) | Dispense (seconds) |
 |-----------|--------------- |---------------|---------------------|
 | KANIKKA   | `0x73E245FB`   | 100           | 3 seconds          |
-| MOHIT     | `0x539C41FB`   | 150           | 4 seconds          |
+| MOHIT     | `0x539C41FB`   | 200           | 6 seconds          |
 
 ---
 
