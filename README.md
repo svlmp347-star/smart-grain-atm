@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Smart Grain ATM** is a premium dispensing system that uses RFID cards to authenticate users and dispense grain in precise amounts based on user preferences. Designed for premium users, the system offers secure, personalized, and efficient grain dispensing with a user-friendly interface.
+**Smart Grain ATM** is an automated grain distributing system that uses RFID cards to authenticate users and dispense grain in precise amounts based on user preferences. Designed for rational card users, the system offers secure, personalized, and efficient grain dispensing with a user-friendly interface.
 
 ---
 
@@ -153,12 +153,22 @@ The system supports only **two predefined premium users** for now! Each user is 
 ---
 
 ## Future Scope
-
+- we can similarly add n number of users with cloud integration 
+- we have developed a logic in terminal  of offline assistant using python
 - mobile based delivery system 
 - solar addition
 - Enhanced security with dynamic user addition.
 - Expand to dispensing multiple grain types.
 
+# Learning outcomes
+
+Edge ai constraints as well thier working 
+Embedded systems
+IoT integration
+Hardware–software interaction
+Android app development
+Solving real-world problems
+ppt making etc
 ---
 
 ## License
