@@ -1,59 +1,49 @@
 # 🌾 GranX: Smart Grain ATM (Project GranX)
-**An IoT-enabled, AI-assisted autonomous dispensing system designed to eliminate PDS corruption in rural India.**
+**An IoT & Edge-AI solution to eliminate corruption and measurement fraud in rural India's PDS.**
 
-[![Status](https://img.shields.io/badge/Project--Phase-Industrial--Prototyping-blue)](https://github.com/Svlmp347-star/smart-grain-atm)
-[![Award](https://img.shields.io/badge/Recognition-District%20INSPIRE%20Winner-gold)](https://www.inspireawards-dst.gov.in/)
-[![Hardware](https://img.shields.io/badge/Compute-ESP32%20%7C%20Edge%20AI-orange)](https://github.com/Svlmp347-star/smart-grain-atm)
+[![Project Status: Active](https://img.shields.io/badge/Project%20Status-Active-brightgreen)](https://github.com/Svlmp347-star/smart-grain-atm)
+[![Award: INSPIRE MANAK](https://img.shields.io/badge/Award-District%20Winner-gold)](https://www.inspireawards-dst.gov.in/)
+[![Sponsor: PCBWay](https://img.shields.io/badge/Sponsor-PCBWay-orange)](https://www.pcbway.com)
 
 ---
 
 ## 📖 Overview
-GranX addresses the "Leakage" problem in the Indian Public Distribution System (PDS). By automating grain weighing and dispensing using **Load Cells** and **RFID Authentication**, we remove human interference, ensuring that every gram of food grain reaches the rightful beneficiary.
+GranX (Smart Grain ATM) is an automated distribution system designed to modernize the Public Distribution System (PDS) in India. By replacing manual weighing with **precision load cells** and human logs with **RFID authentication**, we ensure 100% transparency in grain distribution for rural communities.
 
-### **The Innovation: Offline Edge Intelligence**
-Rural connectivity is unstable. GranX is unique because it integrates **Small Language Models (SLM)** locally. This allows for:
-- **Vernacular Voice UI:** Non-literate users can interact via Hindi/Local dialects.
-- **Zero-Internet Reliability:** All authentication and weighing logic happens on the device (Edge), with **GSM (SIM800L)** acting as a low-bandwidth sync to Firebase.
+## 🚀 Key Features
+- **Precision Dispensing:** Uses 24-bit HX711 digitization for industrial-grade weight accuracy.
+- **Smart Authentication:** Secure RFID-RC522 identity verification to prevent ration theft.
+- **Edge Intelligence (Upcoming):** Integrating **Small Language Models (SLMs)** for offline, vernacular voice-assistance (currently tested in Termux).
+- **Cloud Analytics:** Real-time transaction logging to **Google Firebase** via ESP32.
+- **Resilient Connectivity:** Designed to operate in zero-internet zones using a dual-path Wi-Fi/GSM architecture.
 
----
-
-## 🛠️ Technical Architecture
-
-
-### **Current Hardware Implementation**
-- **Microcontroller:** ESP32-WROOM-32 (Handling multi-threading for sensors and WiFi/GSM).
-- **Sensing:** 24-bit HX711 ADC with 50kg S-Type Industrial Load Cells.
-- **Security:** RFID-RC522 for encrypted UID-based beneficiary tracking.
-- **Actuation:** High-torque MG996R Metal Gear Servos for precision hopper control.
-- **Connectivity:** Dual-path Firebase integration (Wi-Fi + SIM800L GSM).
-
-### **Edge-AI Development (The "Mobile-First" Hacker Approach)**
-Due to hardware constraints, I have pioneered an optimized development workflow:
-- **Quantization:** Testing 4-bit quantized SLMs (TinyLlama/Phi-2) using **Termux/Linux** environments on mobile ARM architecture.
-- **Deployment:** Transitioning these validated models to **Raspberry Pi 5** for the 2026 pilot.
+## 🛠️ Tech Stack
+| Component | Technology |
+| :--- | :--- |
+| **Control** | ESP32-WROOM-32 / Arduino IDE |
+| **Sensing** | S-Type Load Cell + HX711 ADC |
+| **Interface** | I2C LCD / RFID-RC522 / Touch Sensors |
+| **Actuation** | MG996R Metal Gear Servos |
+| **Backend** | Google Firebase / Python (Data Sync) |
+| **OS Support** | Linux/Termux (for Edge AI Research) |
 
 ---
 
-## 📂 Project Structure
-- `/src`: Core ESP32 Arduino/C++ firmware for sensor integration.
-- `/python`: Edge-AI scripts and SLM inference wrappers.
-- `/docs`: Schematics, wiring diagrams, and INSPIRE Award documentation.
-- `/research`: Benchmarks for offline AI performance on ARM-based edge nodes.
+## 📅 Roadmap 2026
+- [x] **District Level Success:** Won the INSPIRE MANAK Award.
+- [ ] **Phase 2 (Current):** Transitioning from breadboard to an **Aluminium T-Slot Chassis** and professional PCB (Sponsored by **PCBWay**).
+- [ ] **Grant Milestone:** Applying for **Hack Club Blueprint** to fund industrial S-type load cells and Raspberry Pi for local SLM hosting.
+- [ ] **Phase 3 (April):** Deployment of field-ready pilot for **Pusa Krishi (ICAR-IARI)** grant application.
 
 ---
 
-## 🏆 Recognition & Support
-- **District Level Winner:** INSPIRE MANAK Award (DST, Govt. of India).
-- **Manufacturing Sponsor:** Professional PCB fabrication support from **PCBWay**.
-- **Candidate:** Hack Club Blueprint Grant 2026.
+## 📂 Repository Structure
+- `/src`: ESP32 Firmware (Arduino C++)
+- `/python`: Backend scripts for database management and AI inference testing.
+- `/schematics`: PCB design files and wiring diagrams.
 
----
+## 🤝 Contribution & Support
+I am a student developer based in **Lakhimpur, Uttar Pradesh**, working to solve local problems through global technology. I am currently seeking mentorship and hardware support to finalize the industrial prototype.
 
-## 📅 Roadmap to 2026
-- **Q1 (Jan-Feb):** Finalizing the Aluminium T-Slot chassis and industrial load cell calibration.
-- **Q2 (April):** Application for the **Pusa Krishi (ICAR-IARI)** Student Grant-in-Aid (₹4 Lakhs).
-- **Q3 (July):** First on-ground pilot deployment in **Lakhimpur, Uttar Pradesh**.
-
----
-
-**Developed with 💡 by Saurabh Verma** *Building technology to solve the "last-mile" transparency gap.*
+**Developer:** Saurabh Verma  
+**GitHub:** [@svlmp347-star](https://github.com/svlmp347-star)
