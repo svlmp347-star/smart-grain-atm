@@ -1,0 +1,12 @@
+Component,Quantity,Unit Cost (INR),Total Cost (INR),Purpose/Justification,Link
+ESP32-S3 DevKitC-1,1,1540,1540,Dual-core processor with WiFi/BLE for IoT connectivity,https://robu.in/product/espressif-esp32-s3-devkitm-1u-n8-development-board/
+Industrial Load Cell (50kg),1,934,934,High-accuracy stainless steel sensor for grain weight,https://robu.in/product/50kg-half-bridge-experiments-body-scale-load-cell-sensor/
+HX711 Amplifier Module,2,122,244,24-bit ADC for high-precision weight data,https://robu.in/product/smartelex-load-cell-amplifier-hx711/
+PN532 NFC RFID Module,1,272,272,User authentication via RFID tags/cards,https://robu.in/product/pn532-nfc-rfid-read-write-module-v3-kit/
+NEMA 17 Stepper Motor,1,941,941,Precise control for grain dispensing mechanism,https://robu.in/product/nema17-2-6-kg-cm-stepper-motor/
+A4988 Stepper Driver,1,150,150,Interface between ESP32 and Stepper Motor,https://robu.in/product/a4988-stepper-motor-driver-module-with-heatsink/
+OLED Display (128x64),1,219,219,Real-time UI for weight and status display,https://robu.in/product/0-96-oled-display-module/
+Custom PCB Fabrication,1,2500,2500,Manufacturing of the main control board (Estimate),https://jlcpcb.com/
+Enclosure & Mechanicals,1,3000,3000,Custom 3D printed and acrylic housing parts,N/A
+Shipping & Taxes,1,1500,1500,Estimated courier and GST charges,N/A
+Contingency (10%),1,1130,1130,Buffer for replacement parts and testing,N/A
