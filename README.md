@@ -39,8 +39,7 @@ This isn't just a technical problem; it's a social injustice. My motivation isn'
 ![All major components laid out](https://github.com/Svlmp347-star/smart-grain-atm/blob/main/Components.jpg?raw=true)
 *The core team: ESP32, RFID reader, load cell, servo motor, and motor driver. Seeing it all come together off the breadboard was a huge step.*
 
-### Recognition
-![My INSPIRE MANAK Award](https://github.com/Svlmp347-star/smart-grain-atm/blob/main/My%20prestigious%20award.jpg?raw=true)
+### Recognition 
 *This award was a validation that the problem I was trying to solve was real and important.*
 
 ## Bill of Materials (BOM)
