@@ -1,8 +1,59 @@
-# GranX: Smart Grain ATM
-**Hardware-based transparency for the Indian Public Distribution System (PDS).**
 
-Built by Saurabh Verma (District Winner, INSPIRE MANAK Awards).
+# GranX: The Smart Grain ATM
 
-## 🛠️ The Problem & Solution
-In my district (Lakhimpur Kheri), grain leakage at ration shops is a major issue. GranX is a hardware-verified dispensing system that ensures the weight a citizen receives matches the digital record.
+### **A Hardware Solution to Bring Transparency to India's Ration Shops**
 
+[![Blueprint](https://img.shields.io/badge/Hack%20Club-Blueprint-ec3750.svg)](https://blueprint.hackclub.com)
+
+## What is this?
+
+GranX is a "Grain ATM"—a hardware device that automates and verifies the distribution of food grains (like rice, wheat, or pulses) at government ration shops in India. It uses an RFID card for identification, a precise load cell to weigh the dispensed grain, and an ESP32 microcontroller to log every transaction digitally to the cloud. The core idea is simple: **the weight leaving the machine must match the weight recorded in the digital ledger**, leaving no room for manipulation or "leakage."
+
+**Key Features:**
+*   **RFID-Based Authentication:** Users authenticate with their ration card.
+*   **Precise, Verified Dispensing:** A load cell measures grain weight in real-time as a servo-controlled gate releases it.
+*   **IoT Transparency:** Every transaction (user ID, grain type, weight, time) is sent to a Firebase database via WiFi.
+*   **Offline-First Design:** Includes a local Bluetooth app for shops with poor internet and plans for an offline AI assistant.
+*   **Built for Scale:** Designed to handle sacks of grain up to 50kg.
+
+## Why did I make it? (The Real Story)
+
+I built this because I've seen the problem with my own eyes. Where I live in Lakhimpur Kheri, the Public Distribution System (PDS) is a lifeline for many families. But too often, people come back from the ration shop with less grain than their entitlement. They talk about "leakage" and suspect the scale is wrong, but they have no proof—it's their word against a handwritten ledger.
+
+This isn't just a technical problem; it's a social injustice. My motivation isn't just to build a cool gadget. It's to build a **"trust machine."** I wanted to create a simple piece of hardware that could stand in the shop and be an impartial witness, ensuring that what the government allocates is exactly what reaches people's bags. Winning the District INSPIRE MANAK Award for this idea showed me that others believed in this vision for change, too.
+
+## How does it work? (In Simple Terms)
+
+1.  **Identify:** A beneficiary taps their RFID-based ration card on the reader.
+2.  **Select:** They choose the grain type and quantity via a simple interface (button/LCD/Bluetooth app).
+3.  **Dispense & Verify:** The microcontroller opens a servo gate. As grain flows out, the load cell constantly measures its weight. The gate closes *exactly* when the target weight is reached.
+4.  **Log & Sync:** The ESP32 records the transaction with a timestamp and immediately pushes this data to a secure online database (Firebase), creating a permanent, tamper-proof record.
+
+## 📸 Visual Journey
+
+### The First Prototype
+![My first working prototype on a breadboard](https://github.com/Svlmp347-star/smart-grain-atm/blob/main/Real%20images%20of%20prototype?raw=true)
+*A mess of wires, but the moment the load cell reading matched the weight on my kitchen scale was pure magic.*
+
+### The Guts of the Machine
+![All major components laid out](https://github.com/Svlmp347-star/smart-grain-atm/blob/main/Components.jpg?raw=true)
+*The core team: ESP32, RFID reader, load cell, servo motor, and motor driver. Seeing it all come together off the breadboard was a huge step.*
+
+### Recognition
+![My INSPIRE MANAK Award](https://github.com/Svlmp347-star/smart-grain-atm/blob/main/My%20prestigious%20award.jpg?raw=true)
+*This award was a validation that the problem I was trying to solve was real and important.*
+
+## Bill of Materials (BOM)
+*The full, detailed Bill of Materials is available as a CSV file: [**BOM.csv**](BOM.csv).* Here are the key components:
+
+| Component | Quantity | Purpose | Approx. Cost (INR) | Link |
+| :--- | :--- | :--- | :--- | :--- |
+| ESP32 Dev Board | 1 | Brain of the system. Handles logic, WiFi, BT. | 500 | [LCSC](https://www.lcsc.com/) |
+| HX711 Load Cell Amp | 1 | Reads weight data from the load cell accurately. | 150 | [Amazon](https://www.amazon.in/) |
+| 20kg Load Cell | 1 | The honest scale. Measures dispensed grain. | 800 | [Robu.in](https://robu.in/) |
+| RFID Kit (RC522) | 1 | Identifies users via their ration cards. | 300 | [Amazon](https://www.amazon.in/) |
+| SG90 Servo Motor | 1 | Acts as the automated gate to control grain flow. | 250 | [Amazon](https://www.amazon.in/) |
+| Logic Level MOSFET | 1 | Safely drives the high-current motor for the auger. | 50 | [LCSC](https://www.lcsc.com/) |
+| **Total** | | | **~₹2,050** | |
+
+## Project Structure & Files
