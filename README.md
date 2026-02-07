@@ -1,35 +1,18 @@
 # Smart Grain ATM
 
-## Hardware Wiring
-- Details on how to wire the components.
+This project provides a smart grain ATM solution for farmers.
 
-## Firmware Setup
-- Instructions for setting up the firmware.
+## Features
+- Automated grain dispensing
+- Real-time monitoring
+- User-friendly interface
 
-## Calibration
-- Steps to calibrate the device.
+## Installation
+1. Clone the repo: `git clone https://github.com/svlmp347-star/smart-grain-atm.git`
+2. Install dependencies: `npm install`
 
-## Usage Flow
-- How to operate the Smart Grain ATM.
-
-## Safety
-- Safety guidelines to follow.
-
-## Configuration
-- Configuring the settings for optimal performance.
-
-## Status
-- Overview of the current status indicators.
-
-## Roadmap
-- Future plans for the project.
+## Usage
+- Run the application: `npm start`
 
 ## Contributing
-- Guidelines for contributing to the project.
-
-## License
-- License information regarding the use of this project.
-
----
-
-### Updated on 2026-02-07.
+Feel free to submit pull requests and report issues!
