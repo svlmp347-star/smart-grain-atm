@@ -3,19 +3,9 @@
 #include <Servo.h>
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
+#include "config.h"
 
-// RFID pins
-#define RST_PIN 9
-#define SS_PIN 10
 MFRC522 mfrc522(SS_PIN, RST_PIN);
-
-// Devices & pins
-const int touchPin = 2;
-const int buzzerPin = 4;
-const int servoPin = 5;
-const int redPin = 6;
-const int greenPin = 7;
-const int bluePin = 8;
 
 Servo myServo;
 LiquidCrystal_I2C lcd(0x27, 16, 2); // Single LCD
@@ -30,22 +20,6 @@ int dispenseSeconds = 0;
 unsigned long lastBlink = 0;
 bool blinkState = false;
 
-// ONLY 2 CARDS - Premium Users
-struct User {
-  byte uid[4];
-  const char* name;
-  int grams;
-  int seconds;
-  int usageCount;
-};
-
-User users[] = {
-  {{0x73, 0xE2, 0x45, 0xFB}, "KANIKKA", 100, 3, 0},  // Card 1
-  {{0x53, 0x9C, 0x41, 0xFB}, "MOHIT", 150, 4, 0}     // Card 2
-};
-
-const int numUsers = 2;
-byte uidSize = 4;
 User* currentUser = nullptr;
 
 void setup() {
