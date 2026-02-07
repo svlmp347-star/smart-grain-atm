@@ -1,37 +1,51 @@
 # Smart Grain ATM
 
-## Bill of Materials
-- List of components and materials used in this project.
+## Bill of Materials Highlights
+- Main Controller Board
+- Sensors (e.g., load cell, moisture sensor)
+- Actuators (e.g., motors, servos)
+- Housing and structural components
 
-## Project Structure & Files
-- Overview of the project layout and where to find important files.
+## Project Structure
+- `src/`: Contains the source code for the firmware.
+- `docs/`: Documentation files.
+- `hardware/`: Schematics and hardware designs.
 
 ## Hardware & Wiring Notes
-- Instructions and diagrams for connecting hardware components.
+- Ensure components are connected to the correct GPIO pins.
+- Use proper resistors to avoid damage to sensors.
 
 ## Firmware Setup
-- Steps to set up and upload the firmware to the device.
+- Clone the repository: `git clone https://github.com/svlmp347-star/smart-grain-atm.git`
+- Open in your IDE (e.g., Arduino IDE, PlatformIO).
+- Install required libraries.
 
 ## Calibration & Tuning
-- Guidelines for calibrating the system and tuning performance.
+- Follow the calibration guide in the `docs/` directory.
+- Tuning parameters should be adjusted based on local conditions (humidity, grain type).
 
 ## Usage Flow
-- Description of how to use the Smart Grain ATM.
+1. Power on the system.
+2. Calibrate sensors if necessary.
+3. Set desired parameters via configuration interface.
+4. Start the operation.
 
 ## Safety & Maintenance
-- Important safety notes and maintenance tips.
+- Regularly check connections and sensors for wear.
+- Keep the housing clean and free from dust.
 
 ## Configuration
-- Instructions on configuring the software/hardware settings.
+- Configuration is done through the web interface or a config file in the `docs/` directory.
 
 ## Status
-- Current status of the project and any known issues.
+- Ongoing project. Contributions and feedback are welcome.
 
 ## Roadmap
-- Planned features and future improvements.
+- Q1 2026: Testing and validation of prototypes.
+- Q2 2026: Field trials and user feedback.
 
 ## Contributing
-- Guidelines for contributing to the project.
+- Please read the contributing guidelines in the `docs/` directory before submitting pull requests.
 
 ## License
-- Information about the project's license.
+- This project is licensed under the MIT License.
