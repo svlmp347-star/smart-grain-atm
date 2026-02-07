@@ -1,0 +1,11 @@
+<svg width="420" height="110" viewBox="0 0 420 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="10" width="100" height="90" rx="18" fill="#0ea5a4" stroke="#f97316" stroke-width="4"/>
+  <g font-family="system-ui, sans-serif">
+    <text x="130" y="55" font-size="36" font-weight="bold" fill="#0f172a">Smart Grain ATM</text>
+    <text x="130" y="85" font-size="19" fill="#f97316">GranX — verifiable grain dispensing</text>
+  </g>
+  <circle cx="60" cy="55" r="22" fill="#fff" stroke="#0f172a" stroke-width="2"/>
+  <rect x="47" y="74" width="26" height="9" rx="2" fill="#dbeafe" stroke="#0f172a" stroke-width="1.5"/>
+  <rect x="51" y="45" width="18" height="25" rx="4" fill="#0ea5a4" stroke="#f97316" stroke-width="2"/>
+  <rect x="57" y="48" width="6" height="10" fill="#f97316" stroke="#fff" stroke-width="0.7"/>
+</svg>
