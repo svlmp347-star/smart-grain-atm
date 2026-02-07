@@ -44,15 +44,4 @@ This isn't just a technical problem; it's a social injustice. My motivation isn'
 
 ## Bill of Materials (BOM)
 *The full, detailed Bill of Materials is available as a CSV file: [**BOM.csv**](BOM.csv).* Here are the key components:
-
-| Component | Quantity | Purpose | Approx. Cost (INR) | Link |
-| :--- | :--- | :--- | :--- | :--- |
-| ESP32 Dev Board | 1 | Brain of the system. Handles logic, WiFi, BT. | 500 | [LCSC](https://www.lcsc.com/) |
-| HX711 Load Cell Amp | 1 | Reads weight data from the load cell accurately. | 150 | [Amazon](https://www.amazon.in/) |
-| 20kg Load Cell | 1 | The honest scale. Measures dispensed grain. | 800 | [Robu.in](https://robu.in/) |
-| RFID Kit (RC522) | 1 | Identifies users via their ration cards. | 300 | [Amazon](https://www.amazon.in/) |
-| SG90 Servo Motor | 1 | Acts as the automated gate to control grain flow. | 250 | [Amazon](https://www.amazon.in/) |
-| Logic Level MOSFET | 1 | Safely drives the high-current motor for the auger. | 50 | [LCSC](https://www.lcsc.com/) |
-| **Total** | | | **~₹2,050** | |
-
 ## Project Structure & Files
